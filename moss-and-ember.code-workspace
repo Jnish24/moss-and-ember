@@ -1,0 +1,11 @@
+{
+  "folders": [
+    { "name": "Project Root", "path": "." },
+    { "name": "Web (Angular)", "path": "web" },
+    { "name": "API (FastAPI)", "path": "api" }
+  ],
+  "settings": {
+    "editor.minimap.enabled": true,
+    "editor.formatOnSave": true
+  }
+}
