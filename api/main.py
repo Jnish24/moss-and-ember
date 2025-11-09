@@ -1,6 +1,12 @@
-def main():
-    print("Hello from api!")
+from typing import Any
+from fastapi import FastAPI
+from config import settings
+from routes import test
+
+app = FastAPI()
+app.include_router(test.router)
 
 
-if __name__ == "__main__":
-    main()
+@app.get("/")
+async def func() -> dict[str, Any]:
+    return {"message": settings.db_host}
